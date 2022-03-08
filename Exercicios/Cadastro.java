@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 
 public class Cadastro {
-	private String[] nomes = {"","","","",""};
+	private String[] nomes = new String[5];
 	
 	public void incluir() {
 		for(int i=0; i<nomes.length; i++) {
