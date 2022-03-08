@@ -13,9 +13,12 @@ public class Cadastro {
 	}
 	
 	public void listar() {
+		String resultado = "";
 		for(int i=0; i<nomes.length; i++) {
-			JOptionPane.showMessageDialog(null, nomes[i].getCodigo()+" - "+nomes[i].getNome());
+			resultado += Integer.toString(nomes[i].getCodigo())+" - "+nomes[i].getNome()+"\n";
+			
 		}
+		JOptionPane.showMessageDialog(null, resultado);
 	}
 
 	public static void main(String[] args) {
