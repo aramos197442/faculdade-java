@@ -1,17 +1,20 @@
 import javax.swing.JOptionPane;
 
 public class Cadastro {
-	private String[] nomes = new String[5];
+	private Pessoa[] nomes = new Pessoa[5];
 	
 	public void incluir() {
 		for(int i=0; i<nomes.length; i++) {
-			nomes[i] = (String) JOptionPane.showInputDialog("Entre com um nome: ");
+			nomes[i] = new Pessoa();
+			nomes[i].setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Entre com um codigo: ")));
+			nomes[i].setNome(JOptionPane.showInputDialog("Entre com um nome: "));
+			//nomes[i] = JOptionPane.showInputDialog("Entre com um nome: ");
 		}
 	}
 	
 	public void listar() {
 		for(int i=0; i<nomes.length; i++) {
-			JOptionPane.showMessageDialog(null, nomes[i]);
+			JOptionPane.showMessageDialog(null, nomes[i].getCodigo()+" - "+nomes[i].getNome());
 		}
 	}
 
