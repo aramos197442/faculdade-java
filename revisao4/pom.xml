@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>local.dio</groupId>
-  <artifactId>jdbcconn</artifactId>
+  <groupId>local.uninga.ads</groupId>
+  <artifactId>revisao4</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>jdbcconn</name>
+  <name>revisao4</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,12 +21,17 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>42.3.3</version>
+	</dependency>
 	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 	<dependency>
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
 	    <version>8.0.28</version>
 	</dependency>
-    
+
   </dependencies>
 </project>
